@@ -1,0 +1,24 @@
+# Site settings: edit these first.
+title: "Reetuparna Vishwanath"
+author: "Reetuparna Vishwanath"
+tagline: "Economist · PhD Fellow, HEC Lausanne · CompNet, IWH"
+description: "Economist working on firm productivity, international trade and global value chains. PhD Fellow at HEC Lausanne and consultant with CompNet at IWH."
+email: "reetuparna98@gmail.com"
+location: "Lausanne, Switzerland"
+social:
+  linkedin: "https://www.linkedin.com/in/reetuparna-vishwanath"
+
+# If the site lives at https://USERNAME.github.io leave baseurl empty.
+# If it lives at https://USERNAME.github.io/REPO set baseurl: "/REPO".
+url: "https://reetuparna98.github.io"
+baseurl: ""
+
+permalink: /:categories/:year/:month/:title/
+markdown: kramdown
+plugins:
+  - jekyll-feed
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

@@ -1,0 +1,45 @@
+---
+layout: page
+title: Research & Articles
+permalink: /research/
+intro: "I study firm productivity, international trade and global value chains using firm-level data, often in collaboration with statistical offices, government economists and international organisations."
+---
+<h2>Research interests</h2>
+<p>Firm productivity and cross-country firm-level data · International trade and MSMEs · Digitalization and cyber-readiness · Global value chains and labour standards</p>
+
+<h2>Working papers</h2>
+<ol class="pubs">
+  <li><strong>International trade and cyber-readiness: A review of micro, small and medium-sized enterprise (MSME) perception and practice</strong> (2026)<br>
+    With Kathryn Lundquist, Rahul Jha and Chi Pok Cheang. <span class="venue">WTO Staff Working Paper ERSD-2026-05</span>. <a href="https://www.wto.org/english/res_e/reser_e/ersd202605_e.htm">Paper</a><br>
+    <span class="pub-note">We define cyber-readiness, report a 2023 survey of businesses and policymakers who had engaged with the International Telecommunication Union, and build a cyber-readiness score. The score shows no correlation with international trade by MSMEs or large firms, but a positive correlation with MSME productivity. The paper grew out of my work in the WTO's Economic Research and Statistics Division.</span><br>
+    <span class="jel">JEL F14, L25, M21, O33</span></li>
+</ol>
+
+<h2>Research projects</h2>
+<ol class="pubs">
+  <li><strong>CompNet Micro Data Infrastructure (MDI)</strong> · Halle Institute for Economic Research (IWH), 2023–present<br>
+    <span class="pub-note">I help develop the cross-country Micro Data Infrastructure of CompNet, the Competitiveness Research Network, which gives researchers and policymakers comparable firm-level data across European countries. I lead collaborations with government economists on research using the MDI, work with national statistical institutes, and train researchers on its tools. From 2024 to 2025 I worked on the infrastructure as a research fellow with Eric Bartelsman at Vrije Universiteit Amsterdam.</span></li>
+  <li><strong>Labor Standards Compliance and Buyer-Supplier Linkages in Global Supply Chains</strong> · University of Oxford and World Trade Institute, University of Bern, 2023<br>
+    <span class="pub-note">Research collaborator on this SNSF-funded project led by Matthew Amengual and Damian Raess, which studies the governance systems that monitor and improve labour standards in global supply chains.</span></li>
+  <li><strong>COVID-19 and social behaviour</strong> · Aalto University, 2020<br>
+    <span class="pub-note">Research assistant to Juuso Välimäki and Pauli Murto, combining economic and epidemiological models to study how the pandemic changed social behaviour.</span></li>
+</ol>
+
+<h2>Talks</h2>
+<ol class="pubs">
+  <li><strong>Statement to the UN Human Rights Council, 52nd regular session</strong> · Palais des Nations, Geneva, 24 March 2023<br>
+    <span class="pub-note">Delivered on behalf of the NGO OCAPROCE in the Item 5 general debate.</span> <a href="https://webtv.un.org/en/asset/k1m/k1mlvfhg2a">Watch on UN Web TV</a> <span class="pub-note">(the statement begins at 1:42:32)</span>
+    <div class="talk-photos">
+      <img src="{{ '/assets/img/unhrc-1.jpg' | relative_url }}" alt="Reetuparna delivering a statement at the UN Human Rights Council">
+      <img src="{{ '/assets/img/unhrc-2.jpg' | relative_url }}" alt="Reetuparna speaking at the NGO speaker's desk, Palais des Nations">
+    </div></li>
+</ol>
+
+<h2>Articles</h2>
+<ul class="post-list">
+{% for post in site.categories.articles %}
+  <li><span class="date">{{ post.date | date: "%-d %b %Y" }}{% if post.publication %} · {{ post.publication }}{% endif %}</span>
+  <a class="title" href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | relative_url }}{% endif %}">{{ post.title }}{% if post.external_url %} <span class="ext">↗</span>{% endif %}</a>
+  <p>{{ post.summary }}</p>{% if post.jel %}<span class="jel">JEL {{ post.jel }}</span>{% endif %}</li>
+{% endfor %}
+</ul>

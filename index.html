@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<section class="hero">
+  <img src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Photo of {{ site.author }}">
+  <div>
+    <h1>Reetuparna Vishwanath</h1>
+    <p class="tagline">{{ site.tagline }}</p>
+    <p>I am an economist and PhD Fellow at HEC Lausanne. My research covers firm productivity, international trade and global value chains. At the Halle Institute for Economic Research (IWH), I work with the CompNet team on a cross-country Micro Data Infrastructure that gives researchers and policymakers comparable firm-level data across Europe.</p>
+    <p>Before my PhD, I was a research fellow at VU Amsterdam and worked in the WTO's Economic Research and Statistics Division. I also write on trade, technology and geopolitics for a general audience.</p>
+    <div class="buttons">
+      <a class="btn primary" href="{{ '/research/' | relative_url }}">Research & Articles</a>
+      <a class="btn" href="{{ '/blog/' | relative_url }}">Blog</a>
+      <a class="btn" href="{{ '/about/' | relative_url }}">About</a>
+    </div>
+  </div>
+</section>
+
+<h2>Latest articles</h2>
+<ul class="post-list">
+{% for post in site.categories.articles limit:3 %}
+  <li><span class="date">{{ post.date | date: "%-d %b %Y" }}{% if post.publication %} · {{ post.publication }}{% endif %}</span>
+  <a class="title" href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | relative_url }}{% endif %}">{{ post.title }}{% if post.external_url %} <span class="ext">↗</span>{% endif %}</a>
+  <p>{{ post.summary }}</p>{% if post.jel %}<span class="jel">JEL {{ post.jel }}</span>{% endif %}</li>
+{% endfor %}
+</ul>
+
+<h2>From the blog</h2>
+<ul class="post-list">
+{% for post in site.categories.blog limit:3 %}
+  <li><span class="date">{{ post.date | date: "%-d %b %Y" }}{% if post.publication %} · {{ post.publication }}{% endif %}</span>
+  <a class="title" href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | relative_url }}{% endif %}">{{ post.title }}{% if post.external_url %} <span class="ext">↗</span>{% endif %}</a>
+  <p>{{ post.summary }}</p></li>
+{% endfor %}
+</ul>
+
+<h2>Outside work</h2>
+<div class="cards">
+  <div class="card"><h3>Odissi dance</h3><p>Classical dancer, trained since the age of five under Guru Hare Krishna Behera.</p></div>
+  <div class="card"><h3>Cooking</h3><p>Indian fusion food with Italian and French influences.</p></div>
+  <div class="card"><h3>Ukulele & puzzles</h3><p>Playing the ukulele and working through maths problems and puzzles.</p></div>
+</div>
+<p><a href="{{ '/life/' | relative_url }}">More about life and hobbies →</a></p>

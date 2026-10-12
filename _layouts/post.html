@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<article class="post">
+  <p class="kicker">{% if page.categories contains "articles" %}Article{% else %}Blog{% endif %} · {{ page.date | date: "%-d %B %Y" }}</p>
+  <h1>{{ page.title }}</h1>
+  {% if page.summary %}<p class="lede">{{ page.summary }}</p>{% endif %}
+  <div class="prose">{{ content }}</div>
+  <p class="back"><a href="{% if page.categories contains 'articles' %}{{ '/research/' | relative_url }}{% else %}{{ '/blog/' | relative_url }}{% endif %}">← Back</a></p>
+</article>
