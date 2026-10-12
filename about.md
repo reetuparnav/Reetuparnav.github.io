@@ -34,5 +34,5 @@ I welcome enquiries about research collaborations in economics, finance, data an
 - National Scholarship in Odissi, Ministry of Culture, Government of India, 2011
 
 ## Contact
-- Email: reetuparna98@gmail.com
+- Email: reetuparnav@gmail.com
 - [LinkedIn](https://www.linkedin.com/in/reetuparna-vishwanath)
