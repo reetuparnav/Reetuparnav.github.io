@@ -22,7 +22,8 @@ You can do this directly on github.com: open `_posts`, click **Add file → Crea
 ## Edit your details
 - Name, tagline, email, social links: `_config.yml`
 - Home page intro and hobby cards: `index.html`
-- Publications: `research.html`
+- Working papers (listed on the home page and the Research page): `_data/working_papers.yml`
+- Research projects, talks and posters: `research.html`
 - Bio and CV: `about.md` (put your CV at `assets/cv.pdf`)
 - Hobbies: `life.md`
 - Photo: replace `assets/img/profile.svg` (or add `profile.jpg` and update `index.html`)

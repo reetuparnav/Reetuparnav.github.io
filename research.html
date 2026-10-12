@@ -9,10 +9,12 @@ intro: "I study firm productivity, international trade and global value chains u
 
 <h2>Working papers</h2>
 <ol class="pubs">
-  <li><strong>International trade and cyber-readiness: A review of micro, small and medium-sized enterprise (MSME) perception and practice</strong> (2026)<br>
-    With Kathryn Lundquist, Rahul Jha and Chi Pok Cheang. <span class="venue">WTO Staff Working Paper ERSD-2026-05</span>. <a href="https://www.wto.org/english/res_e/reser_e/ersd202605_e.htm">Paper</a><br>
-    <span class="pub-note">We define cyber-readiness, report a 2023 survey of businesses and policymakers who had engaged with the International Telecommunication Union, and build a cyber-readiness score. The score shows no correlation with international trade by MSMEs or large firms, but a positive correlation with MSME productivity. The paper grew out of my work in the WTO's Economic Research and Statistics Division.</span><br>
-    <span class="jel">JEL F14, L25, M21, O33</span></li>
+{% for paper in site.data.working_papers %}
+  <li><strong>{{ paper.title }}</strong> ({{ paper.year }})<br>
+    {% if paper.coauthors %}With {{ paper.coauthors }}. {% endif %}<span class="venue">{{ paper.series }}</span>. <a href="{{ paper.url }}">Paper</a><br>
+    <span class="pub-note">{{ paper.summary }}</span>{% if paper.jel %}<br>
+    <span class="jel">JEL {{ paper.jel }}</span>{% endif %}</li>
+{% endfor %}
 </ol>
 
 <h2>Research projects</h2>

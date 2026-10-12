@@ -25,12 +25,12 @@ layout: default
 {% endfor %}
 </ul>
 
-<h2>From the blog</h2>
+<h2>Working papers</h2>
 <ul class="post-list">
-{% for post in site.categories.blog limit:3 %}
-  <li><span class="date">{{ post.date | date: "%-d %b %Y" }}{% if post.publication %} · {{ post.publication }}{% endif %}</span>
-  <a class="title" href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | relative_url }}{% endif %}">{{ post.title }}{% if post.external_url %} <span class="ext">↗</span>{% endif %}</a>
-  <p>{{ post.summary }}</p></li>
+{% for paper in site.data.working_papers limit:3 %}
+  <li><span class="date">{{ paper.year }} · {{ paper.series }}</span>
+  <a class="title" href="{{ paper.url }}">{{ paper.title }} <span class="ext">↗</span></a>
+  <p>{% if paper.coauthors %}With {{ paper.coauthors }}. {% endif %}{{ paper.summary }}</p>{% if paper.jel %}<span class="jel">JEL {{ paper.jel }}</span>{% endif %}</li>
 {% endfor %}
 </ul>
 
