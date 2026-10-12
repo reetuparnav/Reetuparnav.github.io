@@ -9,7 +9,7 @@ intro: "Economist and Odissi dancer, based in Lausanne."
 
 I am a PhD Fellow in Economics at **HEC Lausanne**, University of Lausanne, and a consultant with **CompNet** at the **Halle Institute for Economic Research (IWH)**, a member of the Leibniz Association. My research covers firm productivity, international trade and global value chains, using firm-level data across European countries.
 
-Before starting my PhD, I was a research fellow at **Vrije Universiteit Amsterdam**, interned in the **WTO**'s Economic Research and Statistics Division, and collaborated with the **University of Oxford** and the **World Trade Institute** on an SNSF-funded project on labour standards in global supply chains. In 2023 I delivered a statement to the UN Human Rights Council on behalf of the NGO OCAPROCE. I am a member of the Global Advisory Council of IFPP (Foreign Policy India).
+Before starting my PhD, I was a research fellow at **Vrije Universiteit Amsterdam**, interned in the **WTO**'s Economic Research and Statistics Division, and collaborated with the **University of Oxford** and the **World Trade Institute** on an SNSF-funded project on labour standards in global supply chains. In 2023 I delivered a statement to the UN Human Rights Council on behalf of the NGO OCAPROCE. I am a member of the [Global Advisory Council](https://org.foreignpolicyindia.in/about-us/global-advisory-council) of the Indian Foreign Policy Project.
 
 I welcome enquiries about research collaborations in economics, finance, data analysis and policy.
 
@@ -18,7 +18,7 @@ I welcome enquiries about research collaborations in economics, finance, data an
 - **Research Fellow**, Vrije Universiteit Amsterdam · 2024–2025
 - **Intern, Economic Research and Statistics Division**, World Trade Organization · 2023–2024
 - **Research Collaborator**, World Trade Institute, University of Bern, and University of Oxford · 2023
-- **Member, Global Advisory Council**, IFPP (Foreign Policy India)
+- **Member, Global Advisory Council**, [Indian Foreign Policy Project](https://org.foreignpolicyindia.in/about-us/global-advisory-council)
 - **Research Assistant**, Aalto University · 2020
 - **Earlier:** project manager at StrategyCo.Global, a management consultancy in Helsinki (2021), and research associate at CollegePass, New Delhi (2018–2019)
 
