@@ -29,8 +29,8 @@ I welcome enquiries about research collaborations in economics, finance, data an
 - **BA in Economics and Mathematics**, Lady Shri Ram College for Women, University of Delhi
 
 ## Honours
-- [IHEID Alumni Community Scholarship, 2021–22](https://www.graduateinstitute.ch/communications/news/reetuparna-vishwanath-receives-2021-22-alumni-community-scholarship)
-- Hanken Merit Support Scholarship and Hanken Premium Scholarship
+- [IHEID Alumni Community Scholarship, 2021–22](https://www.graduateinstitute.ch/communications/news/reetuparna-vishwanath-receives-2021-22-alumni-community-scholarship): full funding of tuition and living costs for the Master in International Economics
+- Hanken Merit Support Scholarship and Hanken Premium Scholarship: full funding of tuition and living costs for the MSc
 - National Scholarship in Odissi, Ministry of Culture, Government of India, 2011
 
 ## Contact
