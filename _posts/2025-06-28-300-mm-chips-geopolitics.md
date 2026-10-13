@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The 300 mm chips that will determine the geopolitical landscape"
+title: "The 300 mm wafers that will determine the geopolitical landscape"
 categories: articles
 publication: "Indian Foreign Policy Project"
 external_url: "https://www.foreignpolicyindia.in/2025/06/the-300-mm-chips-that-will-determine-the-future.html"
