@@ -2,18 +2,17 @@
 layout: page
 title: Life & Hobbies
 permalink: /life/
-intro: "Outside research, most of my time goes to Odissi, cooking and the ukulele."
+intro: "Away from economics, you'll usually find me dancing, cooking or puzzling over something."
 ---
 
 ## Odissi dance
-I have trained in Odissi, the classical dance of Odisha, since the age of five under my guru, Guru Hare Krishna Behera. In 2011 I was awarded a National Scholarship in Odissi by the Ministry of Culture, Government of India.
+I was five when I began learning Odissi, the classical dance of Odisha, under my guru, Guru Hare Krishna Behera. Odissi has been part of my life ever since, and I owe a great deal to him and to my teacher, Guru Kalyani Behera.
 
-- Represented Delhi at the national-level solo classical dance programme of the Centre for Cultural Resources and Training (CCRT), Guwahati, 2014
-- Performed at a function hosted by the Prime Minister of India for the visiting French Prime Minister, 2013
-- Performed at the International Youth Festival, Delhi, 2011
-- Performed at major classical dance festivals across India, often at the invitation of state governments, since 2010
+Along the way, I've been lucky to dance on some memorable stages. Since 2010 I have performed at classical dance festivals across India, often at the invitation of state governments. I danced at the International Youth Festival in Delhi in 2011 and at a function the Prime Minister of India hosted for the visiting French Prime Minister in 2013, and in 2014 I represented Delhi at the national-level solo classical dance programme of the Centre for Cultural Resources and Training (CCRT) in Guwahati.
 
-I have won prizes at several national-level solo and group competitions, including those at St. Stephen's College (2017, 2018), Manav Rachna (2017), Sri Venkateswara College (2017) and IIT Kanpur (2016).
+In 2011 India's Ministry of Culture awarded me a National Scholarship in Odissi, which supported my training until 2018. During my undergraduate years in Delhi, I also took part in national-level solo and group competitions, and won prizes at St. Stephen's College (2017, 2018), Manav Rachna (2017), Sri Venkateswara College (2017) and IIT Kanpur (2016).
+
+I still dance whenever I can, and you can watch one of my performances below.
 
 <a class="video-card" href="https://www.youtube.com/watch?v=01AtetiPhDU">
   <img src="{{ '/assets/img/odissi/07.jpg' | relative_url }}" alt="Odissi duet on stage">
@@ -35,10 +34,10 @@ I have won prizes at several national-level solo and group competitions, includi
 </div>
 
 ## Cooking
-I love cooking Indian fusion food, bringing Indian spices and techniques into Italian and French dishes. My weekends usually start with deciding what to make for lunch.
+My weekends usually start with one question: what shall I cook for lunch? More often than not, the answer is a fusion dish, with Indian spices and techniques finding their way into Italian and French recipes.
 
 ## Ukulele and puzzles
-I play the ukulele, and I can happily spend hours on a maths problem or a good puzzle.
+I play the ukulele for fun, and I can happily lose hours to a maths problem or a good puzzle. I like learning something new every day, especially when it's economics.
 
 ## Giving back
-I taught children from low-income families as a National Service Scheme volunteer with the NGO Vidya in New Delhi, created educational comic strips for the NGO MindzTree, and fundraised for Amnesty International in Helsinki.
+I've tried to give some time back, too. In New Delhi I taught children from low-income families as a National Service Scheme volunteer with the NGO Vidya, and created educational comic strips for the NGO MindzTree. In Helsinki I helped raise funds for Amnesty International.
