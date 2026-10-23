@@ -31,6 +31,7 @@ I welcome enquiries about research collaborations in economics, finance, data an
 ## Honours
 - [IHEID Alumni Community Scholarship, 2021–22](https://www.graduateinstitute.ch/communications/news/reetuparna-vishwanath-receives-2021-22-alumni-community-scholarship): full-ride scholarship for the Master in International Economics
 - Hanken Merit Support Scholarship and Hanken Premium Scholarship: full-ride scholarships for the MSc
+- Merit scholarship, Lady Shri Ram College for Women: full tuition fee waiver for the BA, awarded on academic grades
 - National Scholarship in Odissi, Ministry of Culture, Government of India, 2011
 
 ## Contact
