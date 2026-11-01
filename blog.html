@@ -7,8 +7,9 @@ intro: "Shorter, informal pieces on economics and academic life."
 ---
 <ul class="post-list">
 {% for post in site.categories.blog %}
-  <li><span class="date">{{ post.date | date: "%-d %b %Y" }}{% if post.publication %} · {{ post.publication }}{% endif %}</span>
-  <a class="title" href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | relative_url }}{% endif %}">{{ post.title }}{% if post.external_url %} <span class="ext">↗</span>{% endif %}</a>
-  <p>{{ post.summary }}</p></li>
+  <li><span class="date">{{ post.date | date: "%d.%m.%Y" }}{% if post.publication %} · {{ post.publication }}{% endif %}</span>
+  <a class="title" href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | relative_url }}{% endif %}">{{ post.title }}</a>
+  <p>{{ post.summary }}</p>
+  <p class="links"><a class="go {% if post.external_url %}ext{% else %}int{% endif %}" href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | relative_url }}{% endif %}">Read post</a></p></li>
 {% endfor %}
 </ul>

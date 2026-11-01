@@ -11,50 +11,72 @@ intro: "I study firm productivity, international trade and global value chains u
 <h2>Working papers</h2>
 <ol class="pubs">
 {% for paper in site.data.working_papers %}
-  <li><strong>{{ paper.title }}</strong> ({{ paper.year }})<br>
-    {% if paper.coauthors %}With {{ paper.coauthors }}. {% endif %}<span class="venue">{{ paper.series }}</span>. <a href="{{ paper.url }}">Paper</a><br>
-    <span class="pub-note">{{ paper.summary }}</span>{% if paper.jel %}<br>
-    <span class="jel">JEL {{ paper.jel }}</span>{% endif %}</li>
+  <li>
+    <span class="date">{{ paper.year }} · {{ paper.series }}</span>
+    <h3><a href="{{ paper.url }}">{{ paper.title }}</a></h3>
+    <p>{% if paper.coauthors %}With {{ paper.coauthors }}. {% endif %}{{ paper.summary }}</p>
+    <p class="links"><a class="go ext" href="{{ paper.url }}">Read paper</a>{% if paper.jel %}<span class="date">JEL {{ paper.jel }}</span>{% endif %}</p>
+  </li>
 {% endfor %}
 </ol>
 
 <h2>Research projects</h2>
 <ol class="pubs">
-  <li><strong>CompNet Micro Data Infrastructure (MDI)</strong> · Halle Institute for Economic Research (IWH), 2023–present<br>
-    <span class="pub-note">I help develop the cross-country Micro Data Infrastructure of CompNet, the Competitiveness Research Network, which gives researchers and policymakers comparable firm-level data across European countries. I lead collaborations with government economists on research using the MDI, work with national statistical institutes, and train researchers on its tools. From 2024 to 2025 I worked on the infrastructure as a research fellow with Eric Bartelsman at Vrije Universiteit Amsterdam.</span></li>
-  <li><strong>Labor Standards Compliance and Buyer-Supplier Linkages in Global Supply Chains</strong> · University of Oxford and World Trade Institute, University of Bern, 2023<br>
-    <span class="pub-note">Research collaborator on this SNSF-funded project led by Matthew Amengual and Damian Raess, which studies the governance systems that monitor and improve labour standards in global supply chains.</span><br>
-    <a href="https://data.snf.ch/grants/grant/200968">SNSF project page</a></li>
-  <li><strong>COVID-19 and social behaviour</strong> · Aalto University, 2020<br>
-    <span class="pub-note">Research assistant to Juuso Välimäki and Pauli Murto, combining economic and epidemiological models to study how the pandemic changed social behaviour.</span></li>
+  <li>
+    <span class="date">2023–present · Halle Institute for Economic Research (IWH)</span>
+    <h3>CompNet Micro Data Infrastructure (MDI)</h3>
+    <p>I help develop the cross-country Micro Data Infrastructure of CompNet, the Competitiveness Research Network, which gives researchers and policymakers comparable firm-level data across European countries. I lead collaborations with government economists on research using the MDI, work with national statistical institutes, and train researchers on its tools. From 2024 to 2025 I worked on the infrastructure as a research fellow with Eric Bartelsman at Vrije Universiteit Amsterdam.</p>
+  </li>
+  <li>
+    <span class="date">2023 · University of Oxford and World Trade Institute, University of Bern</span>
+    <h3>Labor Standards Compliance and Buyer-Supplier Linkages in Global Supply Chains</h3>
+    <p>Research collaborator on this SNSF-funded project led by Matthew Amengual and Damian Raess, which studies the governance systems that monitor and improve labour standards in global supply chains.</p>
+    <p class="links"><a class="go ext" href="https://data.snf.ch/grants/grant/200968">SNSF project page</a></p>
+  </li>
+  <li>
+    <span class="date">2020 · Aalto University</span>
+    <h3>COVID-19 and social behaviour</h3>
+    <p>Research assistant to Juuso Välimäki and Pauli Murto, combining economic and epidemiological models to study how the pandemic changed social behaviour.</p>
+  </li>
 </ol>
 
 <h2>Software</h2>
 <ol class="pubs">
-  <li><strong>mditools: Microdata Infrastructure Tools</strong> · R package, CRAN, 2026<br>
-    <span class="pub-note">Contributor to the CompNet R package that supports the full workflow of research with firm-level microdata: preparing panels, estimating production functions, capital stocks and markups, and checking outputs against disclosure rules before publication.</span><br>
-    <a href="https://cran.r-project.org/package=mditools">CRAN</a> · <a href="https://github.com/Secretariat-CompNet/mditools">GitHub</a></li>
+  <li>
+    <span class="date">2026 · R package on CRAN</span>
+    <h3>mditools: Microdata Infrastructure Tools</h3>
+    <p>Contributor to the CompNet R package that supports the full workflow of research with firm-level microdata: preparing panels, estimating production functions, capital stocks and markups, and checking outputs against disclosure rules before publication.</p>
+    <p class="links"><a class="go ext" href="https://cran.r-project.org/package=mditools">CRAN</a><a class="go ext" href="https://github.com/Secretariat-CompNet/mditools">GitHub</a></p>
+  </li>
 </ol>
 
 <h2>Talks and posters</h2>
 <ol class="pubs">
-  <li><strong>The Digitalized Economy</strong> (poster, with Daniele Aglio) · 14th CompNet Annual Conference, Vilnius, 25–26 September 2025<br>
-    <span class="pub-note">Presented in the poster session on applications of the Micro Data Infrastructure. Using harmonised firm-level data for France and the Netherlands, we build a digital adoption score from six ICT components and relate it to exporting and productivity. Digitalization is associated with a higher probability of exporting in both countries and with higher labour productivity in France, and online sales are positively associated with TFP.</span><br>
-    <a href="https://www.iwh-halle.de/fileadmin/_compnet/user_upload/DP_poster.pdf">Poster (PDF)</a> · <a href="https://www.iwh-halle.de/en/compnet/events/past-events/14th-compnet-annual-conference">Conference programme</a></li>
-  <li><strong>Statement to the UN Human Rights Council, 52nd regular session</strong> · Palais des Nations, Geneva, 24 March 2023<br>
-    <span class="pub-note">Delivered on behalf of the NGO OCAPROCE in the Item 5 general debate.</span> <a href="https://webtv.un.org/en/asset/k1m/k1mlvfhg2a">Watch on UN Web TV</a> <span class="pub-note">(the statement begins at 1:42:32)</span>
+  <li>
+    <span class="date">25–26 September 2025 · 14th CompNet Annual Conference, Vilnius</span>
+    <h3>The Digitalized Economy</h3>
+    <p>Poster with Daniele Aglio, presented in the session on applications of the Micro Data Infrastructure. Using harmonised firm-level data for France and the Netherlands, we build a digital adoption score from six ICT components and relate it to exporting and productivity. Digitalization is associated with a higher probability of exporting in both countries and with higher labour productivity in France, and online sales are positively associated with TFP.</p>
+    <p class="links"><a class="go ext" href="https://www.iwh-halle.de/fileadmin/_compnet/user_upload/DP_poster.pdf">Poster (PDF)</a><a class="go ext" href="https://www.iwh-halle.de/en/compnet/events/past-events/14th-compnet-annual-conference">Conference programme</a></p>
+  </li>
+  <li>
+    <span class="date">24 March 2023 · Palais des Nations, Geneva</span>
+    <h3>Statement to the UN Human Rights Council, 52nd regular session</h3>
+    <p>Delivered on behalf of the NGO OCAPROCE in the Item 5 general debate. The statement begins at 1:42:32 in the recording.</p>
+    <p class="links"><a class="go ext" href="https://webtv.un.org/en/asset/k1m/k1mlvfhg2a">Watch on UN Web TV</a></p>
     <div class="talk-photos">
       <img src="{{ '/assets/img/unhrc-1.jpg' | relative_url }}" alt="Reetuparna delivering a statement at the UN Human Rights Council">
       <img src="{{ '/assets/img/unhrc-2.jpg' | relative_url }}" alt="Reetuparna speaking at the NGO speaker's desk, Palais des Nations">
-    </div></li>
+    </div>
+  </li>
 </ol>
 
 <h2>Articles</h2>
 <ul class="post-list">
 {% for post in site.categories.articles %}
-  <li><span class="date">{{ post.date | date: "%-d %b %Y" }}{% if post.publication %} · {{ post.publication }}{% endif %}</span>
-  <a class="title" href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | relative_url }}{% endif %}">{{ post.title }}{% if post.external_url %} <span class="ext">↗</span>{% endif %}</a>
-  <p>{{ post.summary }}</p>{% if post.jel %}<span class="jel">JEL {{ post.jel }}</span>{% endif %}</li>
+  <li><span class="date">{{ post.date | date: "%d.%m.%Y" }}{% if post.publication %} · {{ post.publication }}{% endif %}</span>
+  <a class="title" href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | relative_url }}{% endif %}">{{ post.title }}</a>
+  <p>{{ post.summary }}</p>
+  <p class="links"><a class="go {% if post.external_url %}ext{% else %}int{% endif %}" href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | relative_url }}{% endif %}">Read article</a>{% if post.jel %}<span class="date">JEL {{ post.jel }}</span>{% endif %}</p></li>
 {% endfor %}
 </ul>
 <p class="lead-note">Shorter, informal pieces on economics and academic life are on the blog. <a class="more" href="{{ '/blog/' | relative_url }}">Read the blog</a></p>

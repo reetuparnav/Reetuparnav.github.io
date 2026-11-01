@@ -103,18 +103,20 @@ a.kicker:hover{color:var(--a)}
 .pubs > li{counter-increment:entry;position:relative;border-top:1px solid var(--r);padding:18px 0 22px 48px;margin:0}
 .pubs > li::before{content:counter(entry, lower-roman) ".";font-family:var(--serif);font-size:1.15rem;font-style:italic;color:var(--m);position:absolute;left:0;top:20px}
 .prose > h2 + .pubs{border-top:0;padding-top:0}
-.pubs strong{font-family:var(--serif);font-style:normal;font-size:1.5rem;line-height:1.15;display:inline-block;margin-bottom:4px}
-.pubs .venue{font-style:italic;color:var(--m)}
-.pub-note{color:var(--m)}
-.pubs a{border-bottom:1px solid var(--a-soft);text-decoration:none}
-.jel{display:inline-block;margin-top:6px}
-
+.pubs h3{font-family:var(--serif);font-size:1.5rem;line-height:1.15;margin:4px 0 10px}
+.pubs h3 a,.pubs .go,.post-list .go{text-decoration:none}
+.pubs p,.post-list p{margin:0 0 12px}
+.prose .links{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 24px;margin:4px 0 0}
+.prose .go{font-family:var(--serif);font-weight:400;font-size:1.12rem;border-bottom:1px solid var(--a-soft);padding-bottom:1px}
+.prose .date{display:block}
+.prose .links .date{display:inline}
+.prose .more{font-family:var(--serif);font-size:1.12rem;font-style:normal;margin-top:0}
 .post-list{list-style:none;padding:0;margin:0}
+.prose .post-list{padding-left:0}
 .post-list li{border-top:1px solid var(--r);padding:18px 0 22px}
 .prose > h2 + .post-list{border-top:0;padding-top:0}
-.post-list a.title{font-family:var(--serif);display:block;font-size:1.6rem;line-height:1.15;margin:4px 0 8px;text-decoration:none}
-.post-list .ext{font-size:.75em;color:var(--a)}
-.post-list p{margin:0;color:var(--m)}
+.post-list a.title{font-family:var(--serif);display:block;font-size:1.5rem;line-height:1.15;margin:4px 0 10px;text-decoration:none}
+
 
 /* life page */
 .gallery{columns:3 220px;column-gap:14px;margin:8px 0 8px}
