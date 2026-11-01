@@ -75,10 +75,7 @@ a.kicker:hover{color:var(--a)}
 .bleed{position:relative}
 .bleed .dancer{position:absolute;right:0;top:-10px;height:560px;width:auto;pointer-events:none;filter:drop-shadow(0 18px 40px rgba(0,0,0,.35))}
 .bleed .sec > div{position:relative;z-index:1;max-width:430px}
-.outside .item{border-top:1px solid var(--r);padding:20px 0 24px}
-.outside h3{font-size:clamp(1.45rem,2.4vw,1.95rem);line-height:1.12;margin:4px 0 10px}
-.outside h3 a{text-decoration:none}
-.outside p{margin:0;color:var(--m);font-size:1.1rem}
+.bleed .trio{grid-template-columns:1fr}
 .bleed{min-height:580px}
 
 /* inner pages */
@@ -149,20 +146,8 @@ a.kicker:hover{color:var(--a)}
   .portrait{max-width:240px}
   .entry{grid-template-columns:36px minmax(0,1fr)}
   .pubs > li{padding-left:36px}
+  .bleed{min-height:0}
+  .bleed .dancer{position:relative;right:auto;top:auto;height:auto;width:80%;justify-self:end;margin:4px calc(-1 * max(16px, env(safe-area-inset-right, 0px))) 6px 0}
+  .bleed .sec > div{max-width:none}
 }
 @media (prefers-reduced-motion:no-preference){a{transition:color .15s}}
-
-/* Outside work: below 1240px the cut-out sits beside the section label instead of overlapping the text */
-@media (max-width:1240px){
-  .bleed{min-height:0}
-  .bleed .sec{align-items:start}
-  .bleed .sec > .kicker{grid-column:1;grid-row:1}
-  .bleed .dancer{position:relative;right:auto;top:auto;height:auto;grid-column:2;grid-row:1;justify-self:end;width:min(100%,420px);margin:0 calc(-1 * max(16px, env(safe-area-inset-right, 0px))) 6px 0}
-  .bleed .sec > div{grid-column:2;grid-row:2;max-width:none}
-}
-@media (max-width:720px){
-  .bleed .sec{grid-template-columns:minmax(0,1fr) 58%}
-  .bleed .sec > .kicker{padding-top:18px;white-space:nowrap}
-  .bleed .dancer{width:calc(100% + max(16px, env(safe-area-inset-right, 0px)));max-width:none}
-  .bleed .sec > div{grid-column:1 / -1}
-}
