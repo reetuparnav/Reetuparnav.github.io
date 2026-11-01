@@ -24,9 +24,9 @@ plugins:
 logo: /assets/img/profile.jpg
 image: /assets/img/profile.jpg
 lang: en_GB
-# Paste the Google Search Console HTML-tag code here, then push:
-# webmaster_verifications:
-#   google: "CODE_FROM_SEARCH_CONSOLE"
+# Google Search Console ownership check
+webmaster_verifications:
+  google: "5QNe4WniEDuHS_UUCfTRhNprndOM6Kz_W871iYCFjxg"
 exclude:
   - README.md
   - Gemfile
