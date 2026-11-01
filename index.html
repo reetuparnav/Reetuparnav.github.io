@@ -1,43 +1,62 @@
 ---
 layout: default
 ---
-<section class="hero">
-  <img src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Photo of {{ site.author }}">
-  <div>
-    <h1>Reetuparna Vishwanath</h1>
-    <p class="tagline">{{ site.tagline }}</p>
-    <p>I am an economist and PhD Fellow at HEC Lausanne. My research covers firm productivity, international trade and global value chains. At the Halle Institute for Economic Research (IWH), I work with the CompNet team on a cross-country Micro Data Infrastructure that gives researchers and policymakers comparable firm-level data across Europe.</p>
-    <p>Before my PhD, I was a research fellow at VU Amsterdam and worked in the WTO's Economic Research and Statistics Division. I also write on trade, technology and geopolitics for a general audience.</p>
-    <div class="buttons">
-      <a class="btn primary" href="{{ '/research/' | relative_url }}">Research & Articles</a>
-      <a class="btn" href="{{ '/blog/' | relative_url }}">Blog</a>
-      <a class="btn" href="{{ '/about/' | relative_url }}">About</a>
+<div class="wrap">
+  <section class="home-hero">
+    <div>
+      <p class="name-line">Economist · Odissi dancer</p>
+      <h1 class="statement">I am an economist studying firm productivity, international trade and <em>global value chains</em>, using firm-level data from across Europe.</h1>
+      <p class="sub">PhD Fellow, HEC Lausanne · CompNet, Halle Institute for Economic Research</p>
+    </div>
+    <div class="halo-fig">
+      <svg class="wheel" aria-hidden="true"><use href="#wheel"/></svg>
+      <img src="{{ '/assets/img/portrait-side.jpg' | relative_url }}" alt="Portrait of {{ site.author }}">
+    </div>
+  </section>
+</div>
+
+<div class="home-sections">
+  <div class="wrap">
+    <section class="sec" aria-labelledby="sel">
+      <a class="kicker" id="sel" href="{{ '/research/' | relative_url }}">Selected work</a>
+      <ol class="entries">
+        {% for paper in site.data.working_papers limit:2 %}
+        <li class="entry"><div>
+          <span class="date">{{ paper.year }} · {{ paper.series }}</span>
+          <h3><a href="{{ paper.url }}">{{ paper.title }}</a></h3>
+          <a class="go ext" href="{{ paper.url }}">Read paper</a>
+        </div></li>
+        {% endfor %}
+        {% for post in site.categories.articles limit:2 %}
+        <li class="entry"><div>
+          <span class="date">{{ post.date | date: "%d.%m.%Y" }}{% if post.publication %} · {{ post.publication }}{% endif %}</span>
+          <h3><a href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | relative_url }}{% endif %}">{{ post.title }}</a></h3>
+          <a class="go {% if post.external_url %}ext{% else %}int{% endif %}" href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | relative_url }}{% endif %}">Read article</a>
+        </div></li>
+        {% endfor %}
+      </ol>
+    </section>
+  </div>
+
+  <div class="bleed">
+    <img class="dancer" src="{{ '/assets/img/odissi-cutout.webp' | relative_url }}" alt="Reetuparna performing Odissi">
+    <div class="wrap">
+      <section class="sec" aria-labelledby="out">
+        <a class="kicker" id="out" href="{{ '/life/' | relative_url }}">Outside work</a>
+        <div>
+          <ol class="entries">
+            <li class="entry"><div>
+              <span class="date">Since the age of five</span>
+              <h3><a href="{{ '/life/' | relative_url }}">Odissi, under my guru, Guru Hare Krishna Behera</a></h3>
+              <a class="go ext" href="https://www.youtube.com/watch?v=01AtetiPhDU">Watch a performance</a>
+            </div></li>
+          </ol>
+          <div class="trio">
+            <div><span class="date">Weekends</span><h4>Cooking</h4><p>Indian spices in Italian and French dishes.</p></div>
+            <div><span class="date">Evenings</span><h4>Ukulele &amp; puzzles</h4><p>Happily losing hours to a good puzzle.</p></div>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
-</section>
-
-<h2>Latest articles</h2>
-<ul class="post-list">
-{% for post in site.categories.articles limit:3 %}
-  <li><span class="date">{{ post.date | date: "%-d %b %Y" }}{% if post.publication %} · {{ post.publication }}{% endif %}</span>
-  <a class="title" href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url | relative_url }}{% endif %}">{{ post.title }}{% if post.external_url %} <span class="ext">↗</span>{% endif %}</a>
-  <p>{{ post.summary }}</p>{% if post.jel %}<span class="jel">JEL {{ post.jel }}</span>{% endif %}</li>
-{% endfor %}
-</ul>
-
-<h2>Working papers</h2>
-<ul class="post-list">
-{% for paper in site.data.working_papers limit:3 %}
-  <li><span class="date">{{ paper.year }} · {{ paper.series }}</span>
-  <a class="title" href="{{ paper.url }}">{{ paper.title }} <span class="ext">↗</span></a>
-  <p>{% if paper.coauthors %}With {{ paper.coauthors }}. {% endif %}{{ paper.summary }}</p>{% if paper.jel %}<span class="jel">JEL {{ paper.jel }}</span>{% endif %}</li>
-{% endfor %}
-</ul>
-
-<h2>Outside work</h2>
-<div class="cards">
-  <div class="card"><h3>Odissi dance</h3><p>Dancing since I was five, under my guru, Guru Hare Krishna Behera.</p></div>
-  <div class="card"><h3>Cooking</h3><p>Weekend lunches that bring Indian spices into Italian and French dishes.</p></div>
-  <div class="card"><h3>Ukulele & puzzles</h3><p>Playing the ukulele, and happily losing hours to a good puzzle.</p></div>
 </div>
-<p><a href="{{ '/life/' | relative_url }}">More about life and hobbies →</a></p>
