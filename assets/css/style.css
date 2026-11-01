@@ -60,6 +60,8 @@ a.kicker:hover{color:var(--a)}
 .home-sections{counter-reset:entry}
 .entry{display:grid;grid-template-columns:48px minmax(0,1fr);gap:0 0;border-top:1px solid var(--r);padding:20px 0 24px;counter-increment:entry}
 .entry::before{content:counter(entry, lower-roman) ".";font-style:italic;color:var(--m);font-size:1.05rem}
+.entry.plain{grid-template-columns:minmax(0,1fr)}
+.entry.plain::before{content:none}
 .entry h3{font-size:clamp(1.45rem,2.4vw,1.95rem);line-height:1.12;margin:4px 0 10px}
 .entry h3 a{text-decoration:none}
 .entry p{margin:0 0 14px;color:var(--m);font-size:1.1rem;max-width:40em}
@@ -146,9 +148,11 @@ a.kicker:hover{color:var(--a)}
   .portrait{max-width:240px}
   .entry{grid-template-columns:36px minmax(0,1fr)}
   .pubs > li{padding-left:36px}
-  .bleed{display:flex;flex-direction:column;min-height:0}
-  .bleed .dancer{position:relative;order:2;right:auto;top:auto;height:auto;width:80%;margin:10px 0 0 auto}
-  .bleed .wrap{order:1;width:100%}
+  .bleed{min-height:0}
+  .bleed .sec{grid-template-columns:minmax(0,1fr) 58%;align-items:start}
+  .bleed .sec > .kicker{grid-column:1;grid-row:1;padding-top:18px;white-space:nowrap}
+  .bleed .dancer{position:relative;right:auto;top:auto;height:auto;grid-column:2;grid-row:1;width:calc(100% + max(16px, env(safe-area-inset-right, 0px)));max-width:none;margin:0 0 6px}
+  .bleed .sec > div{grid-column:1 / -1;grid-row:2}
   .bleed .sec > div{max-width:none}
 }
 @media (prefers-reduced-motion:no-preference){a{transition:color .15s}}
