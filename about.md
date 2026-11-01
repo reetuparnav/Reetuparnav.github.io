@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+description: "About Reetuparna Vishwanath, economist and PhD Fellow at HEC Lausanne: research, experience, education and honours."
 permalink: /about/
 intro: "Economist and Odissi dancer, based in Lausanne."
 ---

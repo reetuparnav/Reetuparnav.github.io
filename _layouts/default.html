@@ -3,8 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
+  {% seo %}
+  {% if page.url == "/" %}
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"{{ site.author }}","url":"{{ site.url }}","image":"{{ '/assets/img/profile.jpg' | absolute_url }}","jobTitle":"Economist","affiliation":[{"@type":"CollegeOrUniversity","name":"HEC Lausanne, University of Lausanne"},{"@type":"Organization","name":"Halle Institute for Economic Research (IWH)"}],"sameAs":["{{ site.social.linkedin }}"]}
+  </script>
+  {% endif %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">

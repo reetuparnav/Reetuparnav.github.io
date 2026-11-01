@@ -17,6 +17,16 @@ permalink: /:categories/:year/:month/:title/
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Search engines (jekyll-seo-tag)
+logo: /assets/img/profile.jpg
+image: /assets/img/profile.jpg
+lang: en_GB
+# Google Search Console ownership check
+webmaster_verifications:
+  google: "5QNe4WniEDuHS_UUCfTRhNprndOM6Kz_W871iYCFjxg"
 exclude:
   - README.md
   - Gemfile
