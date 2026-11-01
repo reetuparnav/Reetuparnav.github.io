@@ -146,8 +146,9 @@ a.kicker:hover{color:var(--a)}
   .portrait{max-width:240px}
   .entry{grid-template-columns:36px minmax(0,1fr)}
   .pubs > li{padding-left:36px}
-  .bleed{min-height:0}
-  .bleed .dancer{position:relative;right:auto;top:auto;height:auto;width:80%;justify-self:end;margin:4px calc(-1 * max(16px, env(safe-area-inset-right, 0px))) 6px 0}
+  .bleed{display:flex;flex-direction:column;min-height:0}
+  .bleed .dancer{position:relative;order:2;right:auto;top:auto;height:auto;width:80%;margin:10px 0 0 auto}
+  .bleed .wrap{order:1;width:100%}
   .bleed .sec > div{max-width:none}
 }
 @media (prefers-reduced-motion:no-preference){a{transition:color .15s}}
