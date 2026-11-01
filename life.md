@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Life & Hobbies
+description: "Reetuparna Vishwanath away from economics: Odissi dance, cooking and other interests."
 permalink: /life/
 intro: "Away from economics, you'll usually find me dancing, cooking or puzzling over something."
 ---
