@@ -6,7 +6,7 @@ permalink: /about/
 intro: "Economist and Odissi dancer, based in Lausanne."
 ---
 
-<img class="portrait" src="{{ '/assets/img/portrait-side.jpg' | relative_url }}" alt="Reetuparna Vishwanath">
+<img class="portrait" src="{{ '/assets/img/portrait-about.jpg' | relative_url }}" alt="Reetuparna Vishwanath">
 
 I am a PhD Fellow in Economics at **HEC Lausanne**, University of Lausanne, and a consultant with **CompNet** at the **Halle Institute for Economic Research (IWH)**, a member of the Leibniz Association. My research covers firm productivity, international trade and global value chains, using firm-level data across European countries.
 
