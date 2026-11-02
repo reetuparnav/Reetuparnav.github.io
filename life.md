@@ -19,12 +19,12 @@ I still dance whenever I can, and you can watch two of my performances below.
   <a class="video-card" href="https://www.youtube.com/watch?v=bKeleLAFHhI">
     <img src="{{ '/assets/img/odissi/01.jpg' | relative_url }}" alt="Odissi solo on stage">
     <span class="play" aria-hidden="true">▶</span>
-    <span class="video-label">Watch on YouTube</span>
+    <span class="video-label">Solo</span>
   </a>
   <a class="video-card" href="https://www.youtube.com/watch?v=01AtetiPhDU">
-    <img src="{{ '/assets/img/odissi/07.jpg' | relative_url }}" alt="Odissi duet on stage">
+    <img src="{{ '/assets/img/odissi/07.jpg' | relative_url }}" alt="Odissi group performance on stage">
     <span class="play" aria-hidden="true">▶</span>
-    <span class="video-label">Watch on YouTube</span>
+    <span class="video-label">Group</span>
   </a>
 </div>
 
