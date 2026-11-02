@@ -13,13 +13,20 @@ Along the way, I've been lucky to dance on some memorable stages. Since 2010 I h
 
 In 2011 India's Ministry of Culture awarded me a National Scholarship in Odissi, which supported my training until 2018. During my undergraduate years in Delhi, I also took part in national-level solo and group competitions, and won prizes at St. Stephen's College (2017, 2018), Manav Rachna (2017), Sri Venkateswara College (2017) and IIT Kanpur (2016).
 
-I still dance whenever I can, and you can watch one of my performances below.
+I still dance whenever I can, and you can watch two of my performances below.
 
-<a class="video-card" href="https://www.youtube.com/watch?v=01AtetiPhDU">
-  <img src="{{ '/assets/img/odissi/07.jpg' | relative_url }}" alt="Odissi duet on stage">
-  <span class="play" aria-hidden="true">▶</span>
-  <span class="video-label">Watch a performance on YouTube</span>
-</a>
+<div class="videos" id="performances">
+  <a class="video-card" href="https://www.youtube.com/watch?v=bKeleLAFHhI">
+    <img src="{{ '/assets/img/odissi/01.jpg' | relative_url }}" alt="Odissi solo on stage">
+    <span class="play" aria-hidden="true">▶</span>
+    <span class="video-label">Watch on YouTube</span>
+  </a>
+  <a class="video-card" href="https://www.youtube.com/watch?v=01AtetiPhDU">
+    <img src="{{ '/assets/img/odissi/07.jpg' | relative_url }}" alt="Odissi duet on stage">
+    <span class="play" aria-hidden="true">▶</span>
+    <span class="video-label">Watch on YouTube</span>
+  </a>
+</div>
 
 <div class="gallery">
   <figure><img src="{{ '/assets/img/odissi/01.jpg' | relative_url }}" alt="Performing Odissi on stage" loading="lazy"></figure>

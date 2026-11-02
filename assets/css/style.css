@@ -130,10 +130,14 @@ a.kicker:hover{color:var(--a)}
 .video-card img{width:100%;height:100%;object-fit:cover;display:block}
 .video-card .play{position:absolute;left:18px;bottom:18px;width:56px;height:56px;background:var(--a);color:var(--g);display:flex;align-items:center;justify-content:center;font-size:1.2rem}
 .video-card .video-label{position:absolute;left:88px;bottom:32px;font-family:var(--serif);font-size:1.25rem;color:#fff;font-size:1.15rem;text-shadow:0 1px 8px rgba(0,0,0,.6)}
+.videos{display:grid;grid-template-columns:1fr 1fr;gap:18px;scroll-margin-top:24px}
+.videos .video-card .play{width:44px;height:44px;left:14px;bottom:14px}
+.videos .video-card .video-label{left:70px;bottom:24px;font-size:1.05rem}
 .talk-photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:12px}
 .talk-photos img{display:block;width:100%}
 
 @media (max-width:720px){
+  .videos{grid-template-columns:1fr}
   .nav{flex-direction:column;align-items:flex-start}
   .brand{font-size:1.6rem}
   .home-hero{grid-template-columns:1fr;padding-top:36px}
