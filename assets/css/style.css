@@ -44,13 +44,13 @@ a.kicker:hover{color:var(--a)}
 .ext-link::after{content:" \2197"}
 
 /* home: opening */
-.home-hero{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:32px 56px;align-items:center;padding-top:110px;padding-bottom:40px}
+.home-hero{display:grid;grid-template-columns:minmax(0,230px) minmax(0,1fr);gap:32px 64px;align-items:start;padding-top:110px;padding-bottom:40px}
 .name-line{font-style:italic;color:var(--a);font-size:1.3rem;margin:0 0 18px}
 .statement{font-size:clamp(1.75rem,3.2vw,2.65rem);line-height:1.1;letter-spacing:-.01em;margin:0 0 20px;text-wrap:pretty;max-width:21em}
 .statement em{color:var(--a)}
 .sub{color:var(--m);margin:0;font-size:1.15rem}
-.halo-fig{position:relative;width:100%;max-width:290px;aspect-ratio:1;margin:0 auto}
-.halo-fig img{position:relative;display:block;width:100%;height:100%;object-fit:cover;object-position:center 7%;border-radius:50%;box-shadow:0 0 0 9px var(--g),0 0 0 10px var(--a)}
+.halo-fig{order:-1;position:relative;width:100%;aspect-ratio:1;margin:8px 0 0}
+.halo-fig img{position:relative;display:block;width:100%;height:100%;object-fit:cover;object-position:center 7%}
 
 /* two-column sections */
 .sec{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:12px 48px;margin-top:64px}
@@ -141,7 +141,7 @@ a.kicker:hover{color:var(--a)}
   .nav{flex-direction:column;align-items:flex-start}
   .brand{font-size:1.6rem}
   .home-hero{grid-template-columns:1fr;padding-top:36px}
-  .halo-fig{max-width:200px;margin:70px auto 50px}
+  .halo-fig{max-width:190px;margin:8px 0 6px}
   .home-hero{padding-bottom:0}
   .sec,.prose{grid-template-columns:1fr}
   .sec{margin-top:44px}
